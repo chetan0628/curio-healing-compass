@@ -56,12 +56,12 @@ const Index = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 animate-fade-slide-in">
               <Link to="/patient/login">
-                <Button size="lg" className="w-full sm:w-auto gradient-healing text-white hover:opacity-90">
+                <Button size="lg" className="w-full sm:w-auto gradient-healing text-white hover:opacity-90 animate-pulse">
                   Start Your Healing Journey
                 </Button>
               </Link>
               <Link to="/doctor/login">
-                <Button size="lg" variant="outline" className="w-full sm:w-auto">
+                <Button size="lg" variant="outline" className="w-full sm:w-auto hover:bg-primary hover:text-white transition-all duration-300">
                   Healthcare Provider Access
                 </Button>
               </Link>
