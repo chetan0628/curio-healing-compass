@@ -10,6 +10,9 @@ import PatientDashboard from "./pages/PatientDashboard";
 import DoctorDashboard from "./pages/DoctorDashboard";
 import DoctorList from "./pages/DoctorList";
 import HowItWorks from "./pages/HowItWorks";
+import About from "./pages/About";
+import ForgotPassword from "./pages/ForgotPassword";
+import PatientSignup from "./pages/PatientSignup";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -22,7 +25,10 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
+          <Route path="/about" element={<About />} />
           <Route path="/how-it-works" element={<HowItWorks />} />
+          <Route path="/forgot-password" element={<ForgotPassword />} />
+          <Route path="/patient/signup" element={<PatientSignup />} />
           <Route path="/patient/login" element={<PatientLogin />} />
           <Route path="/doctor/login" element={<DoctorLogin />} />
           <Route path="/patient/dashboard" element={<PatientDashboard />} />

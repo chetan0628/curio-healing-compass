@@ -7,11 +7,13 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
+ 
+# Frontend build output
+node_modules/
+dist/
+dist-ssr/
 *.local
-
+ 
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
@@ -22,3 +24,33 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+ 
+# Environment files
+.env
+.env.*
+!.env.example
+ 
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+coverage.xml
+htmlcov/
+.python-version
+ 
+# Virtual environments
+venv/
+.venv/
+backend/venv/
+backend/.venv/
+ 
+# Build caches and misc
+.cache/
+.parcel-cache/
+ 
+# OS
+Thumbs.db
